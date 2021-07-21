@@ -1,0 +1,16 @@
+
+
+<div class="my-5">
+    <h4>Add Todos Lists Here</h4>
+    <form ngNativeValidate (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input required type="text" class="form-control" [(ngModel)]="title" name="title" id="text" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="desc">Todo's Description</label>
+          <input required type="text" class="form-control" [(ngModel)]="desc" name="desc" id="desc">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">ADD TODO</button>
+      </form>
+</div>
